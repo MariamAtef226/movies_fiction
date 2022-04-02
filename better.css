@@ -1,0 +1,347 @@
+body
+{
+  background-color:rgb(67, 4, 4 );
+  font-family:"Century Gothic";
+}
+
+/* containers grids*/
+
+.container
+{
+  width:100%;
+  height:100%;
+  display:grid;
+  grid-template-columns: 50% 48%;
+  grid-template-rows:210px 450px 170px;
+  grid-gap:20px;
+  grid-template-areas: "header header" "new about" "footer footer";
+  background-color: rgba(100%,100%,100%,0.3);
+}
+
+.containerEng
+{
+width:100%;
+height:100%;
+display:grid;
+grid-template-columns: 33% 33% 30%;
+grid-template-rows:210px 300px 170px;
+grid-gap:20px;
+grid-template-areas: "header header header" "modern classic author" "footer footer footer";
+background-color: rgba(100%,100%,100%,0.3);
+}
+
+.containernovel{
+  width:100%;
+  height:100%;
+  display:grid;
+  grid-template-columns: 33% 33% 31%;
+  grid-gap:20px;
+  grid-template-areas: "header header header" "plot plot image" "mycast urcast more" "footer footer footer";
+  background-color: rgba(100%,100%,100%,0.3);
+}
+
+header h1
+{
+  font-size:350%;
+  text-align: center;
+  line-height:10%;
+  color: rgb(234, 209, 5);
+}
+
+header h6
+{
+  font-size:100%;
+  text-align: center;
+  line-height: 10%;
+  text-transform: capitalize;
+}
+
+header
+{
+  grid-area: header;
+  margin:10px;
+  color: rgb(234, 209, 5);
+}
+/*
+nav
+{
+  margin-left:-5px;
+}
+nav a
+{
+  display:inline-block;
+  text-align: center;
+  font-size:150%;
+  width:23.7%;
+  background-color:rgb(100%,100%,100%,0.5);
+  padding:5px;
+  margin-right:-20px;
+  margin-left:-5px;
+  border:solid white;
+  text-decoration: none;
+}
+#lastlink
+{
+  width:26%;
+}
+
+nav
+{
+  margin:0 auto;
+}
+nav.home a
+{
+  display:inline-block;
+  text-align: center;
+  font-size:150%;
+  width:32.5%;
+  background-color:rgb(100%,100%,100%,0.5);
+  padding:5px;
+  margin-right:-20px;
+  margin-left:-5px;
+  border:solid white;
+  text-decoration: none;
+}
+*/
+a:link
+{
+  font-weight:bold;
+  color: rgb(0,0,0);
+}
+
+a:hover, nav.home a:hover
+{
+  font-weight:bold;
+  color: rgb(255,255,255);
+  background-color: rgb(234, 209, 5);
+}
+
+a:visited
+{
+  font-weight:bold;
+  color: rgb(0,0,0);
+}
+
+nav a.active
+{
+  font-weight:bold;
+  color: rgb(255,255,255);
+  background-color: rgb(234, 209, 5);
+}
+h5
+{
+  color:white;
+  font-size:200%;
+  font-weight:bold;
+  margin:0;
+  margin-top:10px;
+}
+
+#new
+{
+    grid-area:new;
+}
+
+#new,#about,#modern,#classic,#author,#plot,#mycast,#urcast,#more
+{
+  margin:10px;
+  border: dotted white;
+  padding-left:10px;
+  padding-right:10px;
+  overflow-y:auto;
+}
+
+#about
+{
+  grid-area:about;
+}
+
+footer
+{
+  grid-area:footer;
+  margin:10px;
+  border: dotted white;
+  padding:10px;
+}
+
+table
+{
+  margin: 15px auto;
+  background-color:rgba(255,255,255,0.8);
+}
+
+a
+{
+  text-decoration: none;
+  color: black;
+}
+
+p
+{
+  font-size:120%;
+  font-weight:bold;
+}
+
+
+#modern
+{
+  grid-area:modern;
+}
+
+#classic
+{
+  grid-area:classic;
+}
+#author
+{
+  grid-area:author;
+}
+
+li{
+  line-height:30px;
+}
+ol
+{
+  list-style: circle;
+}
+
+
+#plot
+{
+  grid-area:plot;
+  overflow-y:auto;
+}
+
+#image
+{
+  grid-area:image;
+}
+
+#mycast{
+  grid-area:mycast;
+  overflow-y:auto;
+}
+#urcast{
+  grid-area:urcast;
+  overflow-y:auto;
+}
+
+
+#more
+{
+  grid-area:more;
+  overflow-y:auto;
+}
+
+
+#more ol
+{
+  font-size:150%;
+}
+
+#new a:hover, #new a h5:hover
+{
+  color:yellow;
+}
+
+.more
+{
+  display:none;
+}
+
+#popper1,#popper2,#popper3
+{
+  z-index:10;
+  position:fixed;
+  top:25%;
+  left:25%;
+  text-align:center;
+  background-color:rgb(234, 209, 5);
+  width:50%;
+  margin:auto 0;
+  display:none;
+}
+
+.close{
+  background-color:rgb(234, 209, 5);
+  color:white;
+  font-weight: bold;
+  display:inline-block;
+  float:right;
+  border-style: solid;
+}
+#about h5:hover
+{
+  color:yellow;
+}
+
+
+nav ul
+{
+text-align:center;
+padding:0;
+margin:0;
+list-style: none;
+}
+
+
+nav > ul > li
+{
+display:inline-block;
+/*padding:0% 2%;*/
+border-right:rgb(151,14,128) solid 3px;
+/*margin-right:-11px;*/
+}
+/*
+nav > ul > li:last-child
+{
+border-right:none;
+}
+*/
+nav
+{
+font-size:230%;
+text-transform:uppercase;
+/*background-color:rgba(151,14,128,0.6);*/
+}
+
+li ul
+{
+display:none;
+}
+
+/*
+/* hovering over naivgation
+
+a:hover
+{
+color:rgb(151,14,128);
+}
+
+li:hover
+{
+background-color:rgba(255,255,255,.7);
+}
+li:hover a
+{
+color:rgb(151,14,128);
+}
+
+li:hover ul
+{
+display:block;
+position:absolute;
+width:inherit;
+font-size:60%;
+background-color:rgba(255,255,255,0.9);
+color:rgb(151,14,128);
+text-align:left;
+margin-left:-1.9%;
+line-height:50px;
+padding-left:4px;
+
+}
+nav li ul li {
+   display: block;
+ }
+*/
