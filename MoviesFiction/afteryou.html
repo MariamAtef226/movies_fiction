@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>After You - By Jojo Moyes</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type = "image/png" href="https://image.flaticon.com/icons/png/512/1101/1101793.png">
+<script src="js/script.js"></script>
+</head>
+<body onload="resultsTable()">
+<div class="containernovel">
+<header>
+    <br>
+    <a href="home.html"> <h1><img src="film.png" alt="Logo" width = "2%"/> Movies-Fiction!</h1></a>
+    <h6><i>Imagine your own scenario..</i></h6>
+    <nav>
+      <ul>
+        <li><a href="home.html">&nbsp;Home Page</a> </li>
+        <li> <a href="english.html" class="active main">&nbsp;English Books</a>
+           <ul>
+             <li> <a href="modernE.html">Modern Novels</a> </li>
+             <li> <a href="ClassicE.html">Classical Novels</a></li>
+             <li> <a href="authorE.html">Browse by Author</a></li>
+            </ul>
+        </li>
+        <li> <a href="arabic.html" class="main">&nbsp;Arabic Books</a>
+           <ul>
+             <li> <a href="modernA.html">Modern Novels</a> </li>
+             <li> <a href="ClassicA.html">Classical Novels</a></li>
+             <li> <a href="authorA.html">Browse by Author</a></li>
+            </ul>
+        </li>
+        <li> <a href = "fiction.html" class = "main"> &nbsp; Imaginary Sequels & Originals</a> </li>
+      </ul>
+    </nav>
+</header>
+
+<section id="plot">
+<h5>After You (novel):</h5>
+<p>
+It continues the story of Louisa Clark after Will's death. She is trying to move on. She was convinced by his motivation to change, so she moved to London and got a job in an airport bar. One night, she decides to go up the roof of her building to sit alone when someone from behind her talks to her. She panics and falls off the roof. She breaks many bones and takes a lot of time to heal. After she gets well she enrolls in a moving on circle in a church and lies to everyone and tells them Will's name was Bill. Lily, Will's daughter <span class = "dots">...</span><span class = "more">gets in contact with her and she wants to know everything about her deceased father, whom she didn't know existed until he died. Lily wants to get to know her grandparents, so she moves in with Louisa. She hates living with her mother, stepfather, and her half-brothers. Meanwhile, Louisa gets to know Sam, the uncle of one of the boys in her moving on circle. Sam is also one of the ambulance drivers that helped save her life. As she gets to know him, a new love story begins to grow in her life. Nathan gets in contact with her and offers her a job in the USA. She interviews for this job and gets accepted. It is such a hard decision for Lou as she had just started to fall for Sam.
+</span> <button class="clickForMore" onclick= "clickButton(this)">Click for more</button>
+</p>
+</section>
+
+<section id="image">
+  <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1539892322l/27774596._SY475_.jpg" alt="bookcover" style="float:right">
+</section>
+
+<section id="mycast">
+<h5>My Casting!</h5>
+<table border="1">
+  <tr><th>Character</th> <th colspan="2"> Actor/Actress</th></tr>
+  <tr><td class="char">Louisa Clarke&nbsp;</td><td><a href="https://en.wikipedia.org/wiki/Emilia_Clarke" target="_blank">Emilia Clarke</a></td><td><a href="https://en.wikipedia.org/wiki/Emilia_Clarke" target="_blank"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScQSHPsormgOEtTgRuifEi8No9oPAVxMk3agJiUJtSyeS61OPW" alt="Emilia Clark" title="Emilia Clark" width="150"/></a></td></tr>
+  <tr><td class = "char">Sam </td><td><a href="https://en.wikipedia.org/wiki/Tom_hiddleston" target="_blank">Tom Hiddleston&nbsp;</a></td><td><a href="https://en.wikipedia.org/wiki/Tom_Hiddleston" target="_blank"><img src="https://i.pinimg.com/564x/8c/72/a9/8c72a905363a3f4612eb36861668f91c.jpg" alt="Tom Hiddleston" title="Tom Hiddleston" width="150" /></a></td></tr>
+</table>
+</section>
+
+<section id="urcast">
+<h5>Choose Your Casting:</h5>
+<table id="entry" border="1">
+  <tr><th>Character</th> <th> Actor/Actress</th></tr>
+  <tr><td>Louisa Clarke&nbsp;</td><td><input id="clarke"><button onclick = " castSubmit('clarke','louisatable') ">Submit</button></td></tr>
+  <tr><td>Sam </td><td><input id="sam"><button onclick = " castSubmit('sam','samtable') ">Submit</button></td></tr>
+</table>
+
+<h5>Your Choices:</h5>
+<table id="results"  border = "1">
+</table>
+
+</section>
+<section id="more">
+<h5>Previous Suggestions:</h5>
+<p>To be done using database (in backend)</p>
+</section>
+
+<footer id="footer"> Mariam Atef&copy;<br>Special Thanks to <cite> IMDB</cite> website and <cite>Wikipedia</cite> Online Encyclopedia.<br>Contact Us:<address> Phone Number: 01060706202<br>Email: mariamatef266@gmail.com <br> Address: Alexandria, Egypt</address></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>A Walk to Remember - By Nicholas Sparks</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type = "image/png" href="https://image.flaticon.com/icons/png/512/1101/1101793.png">
+<script src="js/script.js"></script>
+</head>
+<body>
+<div class="containernovel">
+<header>
+    <br>
+    <a href="home.html"> <h1><img src="film.png" alt="Logo" width = "2%"/> Movies-Fiction!</h1></a>
+    <h6><i>Imagine your own scenario..</i></h6>
+    <nav>
+      <ul>
+        <li><a href="home.html">&nbsp;Home Page</a> </li>
+        <li> <a href="english.html" class="active main">&nbsp;English Books</a>
+           <ul>
+             <li> <a href="modernE.html">Modern Novels</a> </li>
+             <li> <a href="ClassicE.html">Classical Novels</a></li>
+             <li> <a href="authorE.html">Browse by Author</a></li>
+            </ul>
+        </li>
+        <li> <a href="arabic.html" class="main">&nbsp;Arabic Books</a>
+           <ul>
+             <li> <a href="modernA.html">Modern Novels</a> </li>
+             <li> <a href="ClassicA.html">Classical Novels</a></li>
+             <li> <a href="authorA.html">Browse by Author</a></li>
+            </ul>
+        </li>
+        <li> <a href = "fiction.html" class = "main"> &nbsp; Imaginary Sequels & Originals</a> </li>
+      </ul>
+    </nav>
+</header>
+
+<section id="plot">
+<h5>A Walk to Remember (novel):</h5>
+<p>
+  There was a time when the world was sweeter...when the women in Beaufort, North Carolina, wore dresses, and the men donned hats...when something happened to a seventeen-year-old boy that would change his life forever. Every April, when the wind blows in from the sea and mingles with the scent of lilacs, Landon Carter remembers his last year at Beaufort High. It was 1958, and Landon had already dated a girl or two. He even swore that he had once been in love. Certainly the last person in town he thought he'd fall for was Jamie Sullivan, the daughter of the town's <span class = "dots">...</span><span class = "more">Baptist minister. A quiet girl who always carried a Bible with her schoolbooks, Jamie seemed content living in a world apart from the other teens. She took care of her widowed father, rescued hurt animals, and helped out at the local orphanage. No boy had ever asked her out. Landon would never have dreamed of it. Then a twist of fate made Jamie his partner for the homecoming dance, and Landon Carter's life would never be the same. Being with Jamie would show him the depths of the human heart and lead him to a decision so stunning it would send him irrevocably on the road to manhood. No other author today touches our emotions more deeply than Nicholas Sparks.
+  Illuminating both the strength and the gossamer fragility of our deepest emotions, his two New York Times bestsellers, The Notebook and Message in a Bottle, have established him as the leading author of today's most cherished love stories. Now, in A Walk to Remember, he tells a truly unforgettable story, one that glimmers with all of his magic, holding us spellbound-and reminding us that in life each of us may find one great love, the kind that changes everything...
+</span><button class="clickForMore" onclick= "clickButton(this)">Click for more</button>
+</p>
+</section>
+
+<section id="image">
+  <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1498755310l/35545737._SY475_.jpg" alt="bookcover" style="float:right">
+</section>
+
+<section id="mycast">
+<h5>My Casting!</h5>
+<table border="1">
+  <tr><th>Character</th> <th colspan="2"> Actor/Actress</th></tr>
+  <tr><td>Jamie Sullivan&nbsp;</td><td><a href="https://en.wikipedia.org/wiki/Victoria_Justice" target="_blank">Victoria Justice</a></td><td><a href="https://en.wikipedia.org/wiki/Victoria_Justice" target="_blank"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQH2oZeAx3oHknMtP465itTOQzSbFwWhyQ3nNIBbal3yehAtruo" alt="Victoria Justice" title="Victoria Justice" width="150"/></a></td></tr>
+  <tr><td>Landon Carter</td><td><a href="https://en.wikipedia.org/wiki/Dylan_O%27Brien" target="_blank">Dylan O'Brien&nbsp;</a></td><td><a href="https://en.wikipedia.org/wiki/Dylan_O%27Brien" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Dylan_O%27Brien_by_Gage_Skidmore_2.jpg/800px-Dylan_O%27Brien_by_Gage_Skidmore_2.jpg" alt="Dylan O'Brien" title="Dylan O'Brien" width="150" /></a></td></tr>
+</table>
+</section>
+
+
+<section id="urcast">
+<h5>Choose Your Casting:</h5>
+<table border="1">
+  <tr><th>Character</th> <th> Actor/Actress</th></tr>
+  <tr><td>Jamie Sullivan&nbsp;</td><td><input id="sullivan"><button onclick = " castSubmit('sullivan','sullivantable') ">Submit</button></td></tr>
+  <tr><td>Landon Carter </td><td><input id="landon"><button onclick = " castSubmit('landon','landontable') ">Submit</button></td></tr>
+</table>
+
+<h5>Your Choices:</h5>
+<table class="results" border = "1">
+  <tr><td>Jamie Sullivan&nbsp;</td><td id="sullivantable"></td></tr>
+  <tr><td>Landon Carter </td><td id="landontable"></td></tr>
+</table>
+</section>
+
+</section>
+<section id="more">
+<h5>Previous Suggestions:</h5>
+<p>To be done using database (in backend)</p>
+</section>
+
+<footer id="footer"> Mariam Atef&copy<br>Special Thanks to <cite> IMDB</cite> website and <cite>Wikipedia</cite> Online Encyclopedia.<br>Contact Us:<address> Phone Number: 01060706202<br>Email: mariamatef266@gmail.com <br> Address: Alexandria, Egypt</address></footer>
+</div>
+</body>
+</html>
